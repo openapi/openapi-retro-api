@@ -1,0 +1,67 @@
+name: "📸 Testimonianza Retro-API"
+description: "Racconta la chiamata a Openapi fatta dal tuo vecchio computer"
+title: "[Testimonianza] <macchina> - <anno>"
+labels: ["testimonianza"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per partecipare a **Retro-API**! 🕹️
+        ⚠️ **Non pubblicare mai la tua API key**, né nel testo né negli screenshot.
+  - type: input
+    id: macchina
+    attributes:
+      label: "🖥️ Macchina"
+      description: "Modello e anno"
+      placeholder: "Commodore Amiga 500 (1987)"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: "⚙️ Descrizione della macchina"
+      description: "CPU, RAM, sistema operativo, espansioni, scheda di rete..."
+      placeholder: |
+        CPU: Motorola 68000 @ 7.16 MHz
+        RAM: 1 MB
+        OS: AmigaOS 1.3
+        Rete: ...
+    validations:
+      required: true
+  - type: dropdown
+    id: modalita
+    attributes:
+      label: "🔌 Modalità di connessione"
+      options:
+        - "🧼 Native - la macchina fa tutto da sola"
+        - "🛠️ Assisted - un dispositivo moderno risolve un limite specifico (es. TLS)"
+        - "🌉 Bridged - la macchina passa da un bridge moderno"
+        - "🚧 Almost there - non ci sono ancora riuscito"
+    validations:
+      required: true
+  - type: textarea
+    id: connessione
+    attributes:
+      label: "🌉 Come ti sei collegato"
+      description: "Spiega chi fa cosa: proxy, bridge, modem, seriale, stack TCP/IP..."
+  - type: textarea
+    id: software
+    attributes:
+      label: "💾 Software"
+      description: "Linguaggio, compilatore, librerie e link al codice sorgente se pubblico"
+  - type: input
+    id: api
+    attributes:
+      label: "🌐 API Openapi chiamata"
+      placeholder: "CAP, geocoding, cambio valuta..."
+    validations:
+      required: true
+  - type: textarea
+    id: prova
+    attributes:
+      label: "📷 Prova della chiamata"
+      description: "Trascina qui uno screenshot o una foto fatta col cellulare allo schermo che mostra la risposta. Va benissimo anche una foto storta!"
+  - type: textarea
+    id: note
+    attributes:
+      label: "📝 Note, difficoltà, aneddoti"
