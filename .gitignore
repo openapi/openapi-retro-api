@@ -1,30 +1,65 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# ─────────────────────────────────────────────────────────────
+#  Retro-API .gitignore
+#  C:\> TYPE .GITIGNORE
+# ─────────────────────────────────────────────────────────────
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
+# 🔐 Segreti: le API key non devono MAI finire nella repo
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.*
+token.txt
+TOKEN.TXT
+APIKEY.TXT
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# 💻 IDE ed editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 🗂️ File di sistema (moderni e meno moderni)
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.AppleDouble
+.Trashes
+.info
+*.info.bak
+
+# 🧪 Emulatori: stati salvati, config locali e log
+*.sav
+*.state
+*.st0
+*.st1
+*.vsf
+*.uss
+dosbox*.conf
+86box.cfg
+*.log
+
+# 🔨 Artefatti di compilazione
+*.o
+*.obj
+*.OBJ
+*.map
+*.MAP
+*.tmp
+*.TMP
+*.bak
+*.BAK
+build/
+dist/
+
+# 🌉 Bridge e proxy moderni (Node, Python, PlatformIO...)
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.pio/
+
+# 💾 Non ignorare mai .p101/ : le cartoline magnetiche vanno conservate

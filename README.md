@@ -150,6 +150,18 @@ Il [**REGOLAMENTO.md**](REGOLAMENTO.md) attuale descrive lo spirito e le idee al
 
 ---
 
+<!--
+  💾 C:\> DIR /A
+
+  Hai trovato un commento nascosto. Sei chiaramente la persona giusta.
+
+  Ivrea, 1965: la Olivetti Programma 101 diventa il primo computer da scrivania della storia.
+  Ivrea, 1983: arriva l'Olivetti M24.
+
+  Nella cartella .p101/ c'è un programma GW-BASIC che aspetta un Olivetti vero.
+  RUN "RETROAPI.BAS"
+-->
+
 <div align="center">
 
 **Recupera un vecchio computer. Scrivi un po' di codice. Trova un modo per collegarlo al presente.**
