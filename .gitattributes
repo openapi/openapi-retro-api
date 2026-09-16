@@ -1,0 +1,3 @@
+# I sorgenti retro mantengono i fine riga DOS
+*.BAS text eol=crlf
+*.bas text eol=crlf
